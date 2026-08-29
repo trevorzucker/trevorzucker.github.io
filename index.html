@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trevor Zucker's software engineering and developer portfolio">
+    <title>Trevor Zucker | Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a class="site-title" href="#home">Trevor Zucker</a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div>
+                    <p class="eyebrow">Software Engineer & Product Developer</p>
+                    <h1>Hello, I’m <span>Trevor Zucker</span>.</h1>
+                    <p class="hero-text">
+                        I’m a software engineer with years of hands-on experience building full-stack applications, microservices, automation tools, and embedded systems. I especially enjoy projects that cross the boundary between software and hardware, where I can take an idea from initial design through development, prototyping, testing, and a finished physical product.
+                    </p>
+                    <div class="button-row">
+                        <a class="button primary" href="#projects">View My Projects</a>
+                        <a class="button secondary" href="assets/Resume.pdf" target="_blank" rel="noopener">View Résumé</a>
+                    </div>
+                </div>
+
+                <img class="profile-image" src="images/me.jpg" alt="Trevor Zucker">
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container narrow">
+                <p class="section-label">About Me</p>
+                <h2>Who I Am as a Developer</h2>
+                <p>
+                    I started experimenting with HTML when I was around 12 years old, and that curiosity eventually grew into a career in software engineering. Since then, I’ve worked with everything from full-stack applications and microservices to radio systems, embedded hardware, Raspberry Pis, microcontrollers, CAD, and 3D printing. Professionally, I’ve worked across defense, telecommunications, and software engineering. Outside of work, I continue designing and building projects that combine electronics, firmware, software, and mechanical design. I enjoy learning new technologies by applying them to real problems and taking projects from an initial concept to something functional, maintainable, and useful.
+                </p>
+
+                <div class="skills-grid">
+                    <article class="info-card">
+                        <h3>Languages</h3>
+                        <p>Java, C#, Python, TypeScript, JavaScript, C, C++, PHP, Lua, HTML, CSS, SQL</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Tools</h3>
+                        <p>Git, GitHub, Docker, Kubernetes, Jenkins, Ansible, Visual Studio, VS Code, Linux</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Current Focus</h3>
+                        <p>Embedded systems, C++, product development, clean architecture, and maintainable software</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section alternate-background">
+            <div class="container">
+                <p class="section-label">Featured Work</p>
+                <h2>Projects</h2>
+                <p class="section-intro">
+                    My projects range from large-scale software systems and desktop utilities to game-server plugins and complete embedded products combining firmware, electronics, mechanical design, and user-facing software. I enjoy solving practical problems and taking projects from an initial idea to something functional, maintainable, and useful.
+                </p>
+
+                <div class="project-grid">
+
+                    <article class="project-card">
+                        <img src="images/chrono944.png" style="aspect-ratio: unset; padding: 2em; background-color: #fff" alt="Chrono944 embedded automotive display project">
+                        <div class="project-content">
+                            <p class="project-type">Embedded Systems & Product Development</p>
+                            <h3>Chrono944</h3>
+                            <p>
+                                Chrono944 is a modern replacement for the factory digital clock found in later Porsche 944 models. I designed it to preserve the appearance and fit of the original interior while adding modern functionality through a custom embedded system. The project combines C++ firmware, custom electronics, Bluetooth connectivity, a companion mobile application, CAD, 3D printing, and product design into a single integrated device.
+                            </p>
+
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Custom ESP32-based embedded hardware and C++ firmware driving a 128x64 monochrome OLED display designed to visually match the vehicle's 1980s interior.</li>
+                                <li>Bluetooth companion application for configuration, firmware updates, notifications, and communication with the device.</li>
+                                <li>Custom PCB, power circuitry, enclosure, mechanical components, and 3D-printed prototypes designed around the original Porsche mounting location and electrical connections.</li>
+                            </ul>
+
+                            <h4>What I Learned</h4>
+                            <p>
+                                Chrono944 has required me to approach development as a complete product rather than an isolated software project. I’ve had to make decisions involving firmware architecture, power electronics, wireless communication, user-interface design, mechanical tolerances, manufacturing, testing, and maintainability. It has reinforced how important it is to design each part of a system around the constraints of the others and has given me experience carrying an idea from early prototypes toward a product intended for real users.
+                            </p>
+
+                            <div class="project-links">
+                                <a class="text-link" href="https://chrono944.com" target="_blank" rel="noopener">View Project</a>
+                                <a class="text-link" href="https://github.com/trevorzucker" target="_blank" rel="noopener">View GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="images/demo1.gif" alt="Reinforcement Bukkit plugin project">
+                        <div class="project-content">
+                            <p class="project-type">Java & Bukkit Plugin Development</p>
+                            <h3>Reinforcement</h3>
+                            <p>
+                                Reinforcement is an open-source Bukkit plugin I was commissioned to develop for Minecraft servers. It allows players to reinforce blocks with other materials, adding a configurable protection system while maintaining persistent reinforcement data between server sessions.
+                            </p>
+
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Highly configurable reinforcement behavior, including reinforcement amounts, block blacklists, fire behavior, and other server-defined rules.</li>
+                                <li>Persistent reinforcement data that maintains the state of reinforced blocks across server sessions.</li>
+                                <li>Custom armor stand animations, particles, sounds, explosion mitigation, and optimized resource usage.</li>
+                            </ul>
+
+                            <h4>What I Learned</h4>
+                            <p>
+                                Reinforcement strengthened my experience designing software for an environment where performance, configurability, and long-term state all matter. Supporting different server configurations required keeping the implementation flexible while still minimizing unnecessary processing. Building it as a commissioned project also meant translating someone else's requirements into a system that was reliable and straightforward to configure and maintain.
+                            </p>
+
+                            <div class="project-links">
+                                <a class="text-link" href="https://github.com/trevorzucker/Reinforcement" target="_blank" rel="noopener">View Repository</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="images/logitech-g.png" alt="Logitech Mute Indicator desktop application">
+                        <div class="project-content">
+                            <p class="project-type">C# & Windows Desktop Utility</p>
+                            <h3>Logitech Mute Indicator</h3>
+                            <p>
+                                Logitech Mute Indicator is a lightweight C# system tray application that monitors microphone activity and provides an immediate visual indication through compatible Logitech RGB hardware. It was designed as a simple background utility that provides useful feedback without requiring a traditional application window.
+                            </p>
+
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Monitors a user-selected microphone and changes Logitech RGB lighting based on detected audio activity.</li>
+                                <li>System tray interface for selecting microphones, viewing devices, and managing the application without a full desktop window.</li>
+                                <li>Persists the preferred microphone, handles devices being disconnected and reconnected, and is designed for minimal CPU and memory usage.</li>
+                            </ul>
+
+                            <h4>What I Learned</h4>
+                            <p>
+                                This project gave me an opportunity to integrate multiple Windows-facing APIs and hardware interfaces into a utility that is intended to quietly run in the background. It reinforced the importance of handling hardware state changes and persistence cleanly, since devices can disappear, reconnect, or change between sessions. It also demonstrated how a relatively small application can solve a practical problem by connecting software state with physical feedback.
+                            </p>
+
+                            <div class="project-links">
+                                <a class="text-link" href="https://github.com/trevorzucker/LogitechMuteIndicator" target="_blank" rel="noopener">View Repository</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="images/demo2.gif" alt="NameHide Bukkit plugin project">
+                        <div class="project-content">
+                            <p class="project-type">Java & Bukkit Plugin Development</p>
+                            <h3>NameHide</h3>
+                            <p>
+                                NameHide is an open-source Bukkit plugin I was commissioned to develop that hides player nameplates when another player is not actually visible. Instead of relying on the normal always-visible Minecraft nametag behavior, the plugin dynamically displays nameplates based on whether a player should be visible to the viewer.
+                            </p>
+
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Disables normal player nametags and replaces visible names with custom client-side armor stand nameplates.</li>
+                                <li>Dynamically creates, follows, and removes nameplates as players move into and out of view.</li>
+                                <li>Uses client-side entities and multiple optimizations to minimize the amount of additional work placed on the server.</li>
+                            </ul>
+
+                            <h4>What I Learned</h4>
+                            <p>
+                                NameHide required approaching a simple user-facing feature from a less obvious technical direction. Rather than constantly manipulating normal nametags, the solution combines scoreboard behavior with temporary client-side entities to provide more control over what each player sees. The project reinforced my interest in finding efficient solutions by understanding the capabilities and limitations of the underlying platform instead of forcing the most straightforward implementation.
+                            </p>
+
+                            <div class="project-links">
+                                <a class="text-link" href="https://github.com/trevorzucker/NameHide" target="_blank" rel="noopener">View Repository</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="images/ecosim.png" alt="Screenshot of the EcoSim C++ application">
+                        <div class="project-content">
+                            <p class="project-type">C++ Simulation</p>
+                            <h3>EcoSim</h3>
+                            <p>
+                                EcoSim is a C++ ecosystem simulation that models interactions between plants, herbivores, and predators. The simulation advances over time as organisms feed, hunt, reproduce, age, and die, creating population changes based on the current state of the ecosystem.
+                            </p>
+
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Interactive controls for advancing the simulation, resetting the ecosystem, adding organisms, and viewing population statistics.</li>
+                                <li>Object-oriented hierarchy for plants, animals, herbivores, predators, and ecosystem management.</li>
+                                <li>Event-driven feeding, hunting, reproduction, and death systems that dynamically affect population balance.</li>
+                            </ul>
+
+                            <h4>What I Learned</h4>
+                            <p>
+                                EcoSim gave me an opportunity to work more deeply with modern C++ concepts including object ownership, polymorphism, class design, and separation of responsibilities. One of the more interesting challenges was balancing the simulation so populations behaved reasonably without immediately going extinct or growing uncontrollably. Solving that required repeated testing, debugging, tuning, and refinement of the interactions between different systems.
+                            </p>
+
+                            <div class="project-links">
+                                <a class="text-link" href="https://github.com/trevorzucker" target="_blank" rel="noopener">View GitHub</a>
+                                <a class="text-link" href="mailto:zucker.trevorj@gmail.com">Contact Me</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container narrow contact-section">
+                <p class="section-label">Contact</p>
+                <h2>Let’s Connect</h2>
+                <p>
+                    I’m always interested in software engineering, embedded systems, hardware development, and projects that involve solving interesting technical problems. You can find more of my work on GitHub or connect with me through LinkedIn or email.
+                </p>
+
+                <div class="contact-links">
+                    <a class="button primary" href="https://github.com/trevorzucker" target="_blank" rel="noopener">GitHub</a>
+                    <a class="button secondary" href="https://www.linkedin.com/in/trevor-z-7b0491151/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="button secondary" href="mailto:zucker.trevorj@gmail.com">Professional Email</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Trevor Zucker. Built with HTML, CSS, GitHub, and GitHub Pages.</p>
+        </div>
+    </footer>
+</body>
+</html>
